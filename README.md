@@ -1,6 +1,6 @@
 Approche Générale
 
-Ces problèmes peuvent être résolus par diverses techniques, notamment :
+Les problèmes peuvent être résolus par diverses techniques, notamment :
 
 Algorithmes de recherche heuristique (A*, IDA*, etc.).
 
