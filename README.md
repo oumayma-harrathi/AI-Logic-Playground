@@ -1,52 +1,23 @@
-N-Queens Problem Solver
+Approche Générale
 
-Description
+Ces problèmes peuvent être résolus par diverses techniques, notamment :
 
-This Python script solves the N-Queens problem using a backtracking approach. The N-Queens problem is a classic combinatorial problem where the goal is to place N queens on an N×N chessboard such that no two queens threaten each other.
+Algorithmes de recherche heuristique (A*, IDA*, etc.).
 
-How It Works
+Backtracking et recherche en profondeur.
 
-The script implements the following functions:
+Programmation dynamique et approches probabilistes.
 
-verif_but(etat, n): Checks if a solution is complete by verifying if the length of the current state (etat) is equal to n.
+Apprentissage par Renforcement
 
-est_valide(etat, colonne, ligne): Determines if a queen can be placed at a given column and row without conflicting with previously placed queens.
+L’apprentissage par renforcement (RL) est un modèle du machine learning où un agent apprend en interagissant avec un environnement. Pour le Jeu de Taquin et les 8 reines, on peut utiliser :
 
-succ(etat, n): Generates valid successor states by adding a new queen to the current board configuration.
+Q-learning : L’agent apprend une politique optimale en attribuant des récompenses aux actions.
 
-resolution(n): Recursively finds all possible solutions using a backtracking approach.
+Deep Reinforcement Learning (DQN) : Un réseau de neurones améliore l’apprentissage des états et actions.
 
-How to Run the Code
+Monte Carlo Tree Search (MCTS) : Recherche des solutions optimales en simulant plusieurs parties.
 
-Ensure you have Python installed on your system.
+Conclusion
 
-Copy and paste the script into a Python file (e.g., n_queens.py).
-
-Run the script using: python n_queens.py
-The output will display the number of solutions and all valid board configurations.
-Example Output :
-Number of solutions for 8-Queens: 92
-[0, 4, 7, 5, 2, 6, 1, 3]
-[0, 5, 7, 2, 6, 3, 1, 4]
-...
-Complexity
-
-The time complexity of this algorithm is approximately O(N!) in the worst case, making it impractical for very large values of N.
-
-Applications
-
-AI and constraint satisfaction problems
-
-Chess-related problem-solving
-
-Algorithmic optimization and recursion learning
-
-Notes
-
-The algorithm may take longer for larger values of N due to the exponential growth of possibilities.
-
-The current implementation finds all solutions, but can be modified to return only one solution if needed.
-
-Author
-
-This script was written as part of an exercise in solving constraint satisfaction problems using recursion and backtracking.
+Ces problèmes sont largement étudiés en intelligence artificielle, offrant des bases solides pour la résolution de problèmes complexes. En combinant heuristiques et apprentissage par renforcement, on peut améliorer leur résolution et optimiser les performances des agents intelligents.
